@@ -1,0 +1,18 @@
+{
+    "customers": [
+        {
+            "name": "Praveen",
+            "phone": "9012345678",
+            "address": "123, Chennai",
+            "membership": "Platinum",
+            "id": 1
+        },
+        {
+            "name": "RL",
+            "phone": "8012345678",
+            "address": "456, Madurai",
+            "membership": "Pro",
+            "id": 2
+        }
+    ]
+}
