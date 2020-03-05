@@ -5,12 +5,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { ObservableCustomComponent } from './observable-custom/observable-custom.component';
 import { FromComponent } from './creation-operator/from/from.component';
 import { CreationOperatorComponent } from './creation-operator/creation-operator.component';
+import { JoinCreationComponent } from './join-creation/join-creation.component';
 
 const rxjsRoutes: Routes = [
   { path: '', component: ObservableComponent },
   { path: 'custom', component: ObservableCustomComponent },
   { path: 'from', component: FromComponent },
   { path: 'creation', component: CreationOperatorComponent },
+  { path: 'join', component: JoinCreationComponent },
 ]
 
 @NgModule({
@@ -18,7 +20,8 @@ const rxjsRoutes: Routes = [
     ObservableComponent,
     ObservableCustomComponent,
     FromComponent,
-    CreationOperatorComponent
+    CreationOperatorComponent,
+    JoinCreationComponent
   ],
   imports: [
     CommonModule,

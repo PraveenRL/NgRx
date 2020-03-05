@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'rxjs',
     loadChildren: () => import('./rxjs-m/rxjs-m.module').then(m => m.RxjsMModule)
+  },
+  {
+    path: 'schematic',
+    loadChildren: () => import('./schematic/schematic.module').then(m => m.SchematicModule)
   }
 ];
 
