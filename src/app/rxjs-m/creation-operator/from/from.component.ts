@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { from } from 'rxjs';
-import { map, take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-from',
@@ -8,8 +7,8 @@ import { map, take } from 'rxjs/operators';
   styleUrls: ['./from.component.scss']
 })
 export class FromComponent implements OnInit {
-  constructor() {}
-  ngOnInit(): void {}
+  constructor() { }
+  ngOnInit(): void { }
 
   //From ------------------
   // public data = from(fetch("https://5d3c1d02301f26001416ac6c.mockapi.io/users"))
@@ -27,22 +26,6 @@ export class FromComponent implements OnInit {
         console.log(err);
       }
     })
-  }
-  //---------------------
-
-  //Take -------------
-
-  // whileFunc(){
-  //   let i = 0;
-  //   while (i == 100) {
-  //     i++;
-  //     return i;
-  //   }
-  // }
-
-  // public iterator = this.whileFunc();
-  // public result = from(this.iterator).pipe(take(10))
-  take(){
   }
 
 

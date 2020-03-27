@@ -6,6 +6,9 @@ import { ObservableCustomComponent } from './observable-custom/observable-custom
 import { FromComponent } from './creation-operator/from/from.component';
 import { CreationOperatorComponent } from './creation-operator/creation-operator.component';
 import { JoinCreationComponent } from './join-creation/join-creation.component';
+import { FilteringComponent } from './filtering/filtering.component';
+import { TransformationComponent } from './transformation/transformation.component';
+import { TapComponent } from './tap/tap.component';
 
 const rxjsRoutes: Routes = [
   { path: '', component: ObservableComponent },
@@ -13,6 +16,9 @@ const rxjsRoutes: Routes = [
   { path: 'from', component: FromComponent },
   { path: 'creation', component: CreationOperatorComponent },
   { path: 'join', component: JoinCreationComponent },
+  { path: 'filtering', component: FilteringComponent },
+  { path: 'transformation', component: TransformationComponent },
+  { path: 'tap', component: TapComponent },
 ]
 
 @NgModule({
@@ -21,7 +27,10 @@ const rxjsRoutes: Routes = [
     ObservableCustomComponent,
     FromComponent,
     CreationOperatorComponent,
-    JoinCreationComponent
+    JoinCreationComponent,
+    FilteringComponent,
+    TransformationComponent,
+    TapComponent
   ],
   imports: [
     CommonModule,
