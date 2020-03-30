@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'schematic',
     loadChildren: () => import('./schematic/schematic.module').then(m => m.SchematicModule)
+  },
+  {
+    path: 'forms',
+    loadChildren: () => import('./forms/form.module').then(m => m.FormModule)
   }
 ];
 
