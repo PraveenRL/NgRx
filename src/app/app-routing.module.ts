@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: 'forms',
     loadChildren: () => import('./forms/form.module').then(m => m.FormModule)
+  },
+  {
+    path: 'lifecycle',
+    loadChildren: () => import('./lifecyclehooks/lifecyclehooks.module').then(m => m.LifecyclehooksModule)
   }
 ];
 

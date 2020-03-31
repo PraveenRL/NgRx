@@ -1,0 +1,9 @@
+<app-helper *ngIf="showChild" name="{{ name }}"></app-helper>
+
+
+<div class="input-group container mt-5">
+    <input type="text" [(ngModel)]="name" class="form-control">
+    <div class="input-group-append">
+        <button (click)="toggleChild()" class="btn btn-primary">ToggleChild</button>
+    </div>
+</div>
