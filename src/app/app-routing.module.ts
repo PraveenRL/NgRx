@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path: 'lifecycle',
     loadChildren: () => import('./lifecyclehooks/lifecyclehooks.module').then(m => m.LifecyclehooksModule)
+  },
+  {
+    path: 'ngrx-todo',
+    loadChildren: () => import('./ngrx/components/todo.module').then(m => m.TodoModule)
   }
 ];
 

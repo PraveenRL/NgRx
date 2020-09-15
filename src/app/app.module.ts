@@ -9,19 +9,12 @@ import { NavbarModule } from './navbar/navbar.module';
 import { SharedModule } from './shared/shared.module';
 
 import { StoreModule } from '@ngrx/store';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-
 import { TodoReducer } from './ngrx/reducers/todo.reducer';
-import { TodoComponent } from './ngrx/components/todo/todo.component';
-import { AddTodoComponent } from './ngrx/components/add-todo/add-todo.component';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TodoComponent,
-    AddTodoComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +23,6 @@ import { AddTodoComponent } from './ngrx/components/add-todo/add-todo.component'
     NavbarModule,
     BrowserAnimationsModule,
     StoreModule.forRoot({ todos: TodoReducer }),
-    StoreDevtoolsModule.instrument(),
   ],
   providers: [],
   bootstrap: [AppComponent]
