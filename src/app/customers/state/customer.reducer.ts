@@ -29,7 +29,7 @@
 // }
 
 import { Customer } from '../customer.model';
-import * as fromRoot from '../../state/app-state';
+import * as fromRoot from '../state/app-state';
 import * as customerActions from './customer.actions';
 
 export interface CustomerState {
